@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: hsla(181, 35%, 47%, 0);
+  color: white;
+}
+.logo {
+  font-size: 30px;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+.explore,
+.login,
+.tracks,
+.newtrack {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.newtrack {
+  border: 1px solid rgb(238, 224, 219);
+  border-radius: 3px;
+  color: rgb(240, 226, 226);
+}
+.mobile-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .mobile-nav-list {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: rgb(93, 136, 132);
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  .explore,
+  .login,
+  .tracks,
+  .newtrack {
+    color: rgb(224, 212, 212);
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+
+    transition: sll 0.5s ease;
+  }
+  .newtrack {
+    border: none;
+    background-color: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: cornsilk;
+    background-color: darkcyan;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
+}

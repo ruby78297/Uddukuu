@@ -1,0 +1,129 @@
+.container {
+  width: 40%;
+  height: 40%;
+  margin: 150px 50px;
+}
+.quote-container {
+  height: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+}
+.quote {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.search-container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  margin-bottom: 30px;
+  width: 80%;
+  border: 1px solid rgb(27, 197, 98);
+  background-color: white;
+  border-radius: 30px;
+}
+input {
+  padding: 15px;
+  width: 75%;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: white;
+}
+.btn {
+  background-color: rgb(66, 163, 131);
+  padding: 15px;
+  width: 25%;
+  border: none;
+  border-radius: 25px;
+  color: rgb(241, 248, 246);
+}
+p {
+  color: rgb(94, 189, 212);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    height: 40%;
+    margin: 150px 40px;
+  }
+  .search-container {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote-container {
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+  }
+  .quote {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  input {
+    padding: 15px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: white;
+  }
+  .btn {
+    background-color: rgb(66, 163, 131);
+    padding: 15px;
+    width: 30%;
+    border: none;
+    border-radius: 25px;
+    color: rgb(241, 248, 246);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+    height: 40%;
+    margin: 150px 40px;
+  }
+  .search-container {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote-container {
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+  }
+  .quote {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  .btn {
+    background-color: rgb(66, 163, 131);
+    padding: 15px;
+    width: 40%;
+    border: none;
+    border-radius: 25px;
+    color: rgb(241, 248, 246);
+  }
+  input {
+    padding: 15px;
+    width: 60%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: white;
+  }
+}

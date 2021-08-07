@@ -1,0 +1,28 @@
+.Cards {
+  display: flex;
+
+  background-color: burlywood;
+  border: 2px solid;
+  height: 400px;
+}
+.Card-1 {
+  margin-top: 50px;
+  margin-left: 10px;
+  height: 75%;
+  width: 30%;
+  border: 1px solid red;
+}
+.Card-2 {
+  margin-top: 50px;
+  margin-left: 10px;
+  height: 75%;
+  width: 30%;
+  border: 1px solid rgb(10, 6, 6);
+}
+.Card-3 {
+  margin-left: 10px;
+  margin-top: 50px;
+  height: 75%;
+  width: 30%;
+  border: 1px solid rgb(77, 122, 91);
+}
