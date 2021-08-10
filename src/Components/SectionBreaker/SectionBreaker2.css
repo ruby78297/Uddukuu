@@ -1,0 +1,7 @@
+.breaker {
+  background-color: rgb(255, 220, 243);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

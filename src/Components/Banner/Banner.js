@@ -17,18 +17,10 @@ const Banner = () => {
         <Navbar />
         {/* using switch to go to links from nav bar */}
         <Switch>
-          <Route path="/explore" component={Explore} exact>
-            <Explore />
-          </Route>
-          <Route path="/login" component={Login} exact>
-            <Login />
-          </Route>
-          <Route path="/tracks" component={Tracks} exact>
-            <Tracks />
-          </Route>
-          <Route path="/newtrack" component={NewTrack} exact>
-            <NewTrack />
-          </Route>
+          <Route path="/explore" component={Explore}></Route>
+          <Route path="/login" component={Login}></Route>
+          <Route path="/tracks" component={Tracks}></Route>
+          <Route path="/newtrack" component={NewTrack}></Route>
         </Switch>
       </Router>
       <SearchBar></SearchBar>

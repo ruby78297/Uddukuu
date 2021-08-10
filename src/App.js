@@ -1,14 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
-import Cards from "./Components/Cards/Cards";
-
+import Footer from "./Components/Footer/Footer";
+import Services from "./Components/Services/Services";
+import SectionBreaker from "./Components/SectionBreaker/SectionBreaker";
+import OtherServices from "./Components/OtherServices/OtherServices";
+import SectionBreaker2 from "./Components/SectionBreaker/SectionBreakjer2";
 function App() {
   return (
     <div className="App">
-      <Banner></Banner>
-      <Cards></Cards>
+      <Banner />
+      <Services />
+      <SectionBreaker />
+      <OtherServices />
+      <SectionBreaker2 />
+      <Footer />
     </div>
   );
 }
