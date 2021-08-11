@@ -6,3 +6,13 @@
   grid-gap: 80px;
   justify-items: center;
 }
+@media screen and (max-width: 768px) {
+  .grid-container {
+    background-color: rgb(231, 228, 216);
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 80px;
+    justify-items: center;
+  }
+}

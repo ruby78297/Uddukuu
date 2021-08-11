@@ -3,8 +3,9 @@ import "./SectionBreaker2.css";
 
 const ServiceBreaker2 = () => {
   return (
-    <div className="breaker">
-      <h2> Music is the shorthand of emotion </h2>
+    <div className="row section-Wraper">
+      <div className="col-sm breaker">hello</div>
+      <div className="col-sm breaker-image">hello</div>
     </div>
   );
 };
