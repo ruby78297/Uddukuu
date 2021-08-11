@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="row">
-        <section className="footer-subscription">
+        {/* <section className="footer-subscription">
           <p className="footer-subscription-heading">Join Us anytime</p>
           <p className="footer-subscription-text">
             You can unsubscribe at any time.
@@ -26,7 +26,7 @@ function Footer() {
               </Button>
             </form>
           </div>
-        </section>
+        </section> */}
       </div>
 
       <div className="footer-links">

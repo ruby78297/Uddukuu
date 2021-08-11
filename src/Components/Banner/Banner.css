@@ -1,9 +1,9 @@
 .Banner-item {
   background-image: url("./Banner.jpg");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+
   animation: slide 10s infinite;
-  width: 100vw;
+
   height: 100vh;
 }
 @keyframes slide {
@@ -29,8 +29,9 @@
     background-color: rgb(41, 146, 111);
     display: block;
     justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: static;
+    background-size: 100% 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 100%;
   }
 }

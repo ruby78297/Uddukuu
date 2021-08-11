@@ -1,12 +1,11 @@
 import React from "react";
 import "./Services.css";
-import Cardlist from "./Cardlist";
-import { CardsData } from "./CardsData";
+import Cards from "./Cards";
 
-const Services = (props) => {
+const Services = () => {
   return (
-    <div className="cards-container">
-      <Cardlist CardsData={CardsData} />
+    <div className="services">
+      <Cards></Cards>
     </div>
   );
 };

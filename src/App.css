@@ -2,9 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  padding-right: 0;
   font-family: "font-family: " Montserrat ", sans-serif;";
   -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display: none;
 }
