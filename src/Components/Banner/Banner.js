@@ -12,7 +12,7 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="Banner-item">
+    <div className="Banner-item wrap">
       <Router>
         <Navbar />
         {/* using switch to go to links from nav bar */}

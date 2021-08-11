@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import Button from "../button/Button";
 
 function Footer() {
   return (
@@ -20,7 +21,9 @@ function Footer() {
                 className="footer-input"
               />
 
-              <Link buttonStyle="btn--outline">Subscribe</Link>
+              <Button buttonStyle="btn--outline" className="fbtn">
+                Subscribe
+              </Button>
             </form>
           </div>
         </section>

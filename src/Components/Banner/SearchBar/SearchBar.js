@@ -3,7 +3,7 @@ import "./SearchBar.css";
 
 const SearchBar = () => {
   return (
-    <div className="container">
+    <div className="container-1">
       <div className="quote-container">
         <div className="quote">
           {" "}
@@ -29,7 +29,7 @@ const SearchBar = () => {
               placeholder="What are you looking for"
               name="s"
             />
-            <button className="btn" type="submit">
+            <button className="btn-1" type="submit">
               Search
             </button>
           </form>
