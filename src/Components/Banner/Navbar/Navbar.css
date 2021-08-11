@@ -12,7 +12,8 @@
   color: white;
 }
 .logo {
-  font-size: 30px;
+  height: 50;
+  width: 15%;
 }
 .nav-list {
   display: flex;
@@ -23,15 +24,16 @@
 .explore,
 .login,
 .tracks,
-.newtrack {
+.newtrack,
+.registration {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 20px;
   margin: 0px 10px;
   cursor: pointer;
 }
-.newtrack {
+.login {
   border: 1px solid rgb(238, 224, 219);
   border-radius: 3px;
   color: rgb(240, 226, 226);
@@ -61,7 +63,8 @@
   .explore,
   .login,
   .tracks,
-  .newtrack {
+  .newtrack,
+  .registration {
     color: rgb(224, 212, 212);
     text-align: center;
     padding: 32px;
@@ -69,7 +72,7 @@
 
     transition: all 0.5s ease;
   }
-  .newtrack {
+  .login {
     border: none;
     background-color: none;
   }
