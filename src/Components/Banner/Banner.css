@@ -2,7 +2,7 @@
   background-image: url("./Banner.jpg");
   background-size: 100% 100%;
 
-  animation: slide 10s infinite;
+  animation: slide 15s infinite;
 
   height: 100vh;
 }
