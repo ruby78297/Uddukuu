@@ -32,7 +32,7 @@ function Footer() {
       <div className="footer-links">
         <div className=" footer-link-wrapper">
           <div className="row">
-            <div className="col-sm col-md footer-link-items footer-link-items-1">
+            <div className=" col-md footer-link-items footer-link-items-1">
               <h2>About Us</h2>
               <Link to="/sign-up">How it works</Link>
 
@@ -44,7 +44,7 @@ function Footer() {
 
               <Link to="/">Terms of Service</Link>
             </div>
-            <div className="col-sm col-md footer-link-items footer-link-items-2">
+            <div className=" col-md footer-link-items footer-link-items-2">
               <h2>Contact Us</h2>
               <Link to="/sign-up">How it works</Link>
 
@@ -57,7 +57,7 @@ function Footer() {
               <Link to="/">Terms of Service</Link>
             </div>
 
-            <div className="col-sm col-md footer-link-items footer-link-items-3">
+            <div className=" col-md footer-link-items footer-link-items-3">
               <h2>About Us</h2>
               <Link to="/sign-up">How it works</Link>
 
@@ -69,7 +69,7 @@ function Footer() {
 
               <Link to="/">Terms of Service</Link>
             </div>
-            <div className="col-sm col-md footer-link-items footer-link-items-4">
+            <div className=" col-md footer-link-items footer-link-items-4">
               <h2>Contact Us</h2>
               <Link to="/sign-up">How it works</Link>
 
