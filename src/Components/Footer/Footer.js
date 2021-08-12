@@ -6,8 +6,8 @@ import Button from "../button/Button";
 function Footer() {
   return (
     <div className="footer-container">
-      <div className="row">
-        {/* <section className="footer-subscription">
+      {/* <div className="row">
+        <section className="footer-subscription">
           <p className="footer-subscription-heading">Join Us anytime</p>
           <p className="footer-subscription-text">
             You can unsubscribe at any time.
@@ -26,13 +26,13 @@ function Footer() {
               </Button>
             </form>
           </div>
-        </section> */}
-      </div>
+        </section>
+      </div> */}
 
       <div className="footer-links">
         <div className=" footer-link-wrapper">
           <div className="row">
-            <div className="col-sm col-md footer-link-items">
+            <div className="col-sm col-md footer-link-items footer-link-items-1">
               <h2>About Us</h2>
               <Link to="/sign-up">How it works</Link>
 
@@ -44,7 +44,7 @@ function Footer() {
 
               <Link to="/">Terms of Service</Link>
             </div>
-            <div className="col-sm col-md footer-link-items">
+            <div className="col-sm col-md footer-link-items footer-link-items-2">
               <h2>Contact Us</h2>
               <Link to="/sign-up">How it works</Link>
 
@@ -57,7 +57,7 @@ function Footer() {
               <Link to="/">Terms of Service</Link>
             </div>
 
-            <div className="col-sm col-md footer-link-items">
+            <div className="col-sm col-md footer-link-items footer-link-items-3">
               <h2>About Us</h2>
               <Link to="/sign-up">How it works</Link>
 
@@ -69,7 +69,7 @@ function Footer() {
 
               <Link to="/">Terms of Service</Link>
             </div>
-            <div className="col-sm col-md footer-link-items">
+            <div className="col-sm col-md footer-link-items footer-link-items-4">
               <h2>Contact Us</h2>
               <Link to="/sign-up">How it works</Link>
 
