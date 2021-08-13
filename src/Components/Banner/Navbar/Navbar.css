@@ -53,9 +53,11 @@
   }
   .mobile-nav-list {
     display: block;
+    position: absolute;
     list-style: none;
     background-color: rgb(93, 136, 132);
     top: 75px;
+    left: 0;
     transition: all 0.5s ease-out;
     width: 100%;
   }
@@ -79,6 +81,7 @@
   .mobile-menu-icon {
     display: block;
     position: absolute;
+
     font-size: 30px;
     color: rgb(225, 220, 255);
 
@@ -86,6 +89,7 @@
 
     border: none;
     outline: none;
-    margin-left: 80%;
+    top: 15px;
+    right: 25px;
   }
 }
