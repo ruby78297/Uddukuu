@@ -2,10 +2,10 @@ import React from "react";
 import "./Cards.css";
 import { CardData } from "./CardData";
 
-const Cards = () => {
+const Cards = (props) => {
   return (
     <div className="card-container">
-      {CardData.map((data, key) => {
+      {/* {CardData.map((data, key) => {
         return (
           <div className="card-data" key={key}>
             <div className="image"></div>
@@ -13,7 +13,11 @@ const Cards = () => {
             <div className="des"> {data.des}</div>
           </div>
         );
-      })}
+      })} */}
+
+      <div className="image">{props.image}</div>
+      <div className="title">{props.title}</div>
+      <div className="des">{props.des}</div>
     </div>
   );
 };

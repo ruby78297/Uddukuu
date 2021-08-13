@@ -15,8 +15,7 @@ export const CardData = [
     id: 3,
     title: "Mixing Engineers",
     des: "Engineers are everywhere right, Hire one to turn your song release ready",
-    image:
-      "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
+    image: "",
   },
   {
     id: 4,

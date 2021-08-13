@@ -1,0 +1,13 @@
+#cat {
+  margin-top: -50px;
+  padding: 30px;
+  text-align: center;
+  color: rgb(24, 23, 22);
+}
+#cat:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.more {
+  border-bottom: 1px solid rgb(80, 69, 69);
+}

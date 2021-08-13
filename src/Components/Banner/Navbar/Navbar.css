@@ -41,7 +41,7 @@
 .mobile-menu-icon {
   display: none;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .logo {
     display: flex;
     position: absolute;
@@ -78,10 +78,11 @@
   }
   .mobile-menu-icon {
     display: block;
+    position: absolute;
     font-size: 30px;
     color: rgb(225, 220, 255);
-    position: absolute;
-    background-color: rgb(19, 20, 20);
+
+    background-color: rgb(19, 20, 20, 0);
 
     border: none;
     outline: none;

@@ -1,4 +1,4 @@
-.card-container {
+/* .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 250px);
@@ -19,8 +19,8 @@
   border-radius: 15px;
   text-align: center;
   transition: box-shadow 0.5s;
-}
-.card-data:hover {
+} */
+/* .card-data:hover {
   opacity: 0.8;
 
   box-shadow: 5px 5px 5px 5px rgb(26, 27, 25);
@@ -43,9 +43,9 @@
 }
 .card-data:hover .title {
   margin-top: 60px;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .card-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -66,4 +66,100 @@
     color: white;
     opacity: 1;
   }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-auto-rows: 250px;
+  grid-gap: 30px;
+  padding: 20px;
+} */
+/* .card-data {
+  border: 2px solid black;
+  object-fit: cover;
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  border-radius: 15px;
+  text-align: center;
+  transition: box-shadow 0.5s;
+} */
+.card-1 {
+  background-image: url("./card-1.jpg");
+  display: grid;
+  object-fit: absolute;
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+.card-2 {
+  background-image: url("./card-2.jpg");
+  display: grid;
+  object-fit: absolute;
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+.card-3 {
+  background-image: url("./card-3.jpg");
+  display: grid;
+  object-fit: absolute;
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+.card-4 {
+  background-image: url("./card-4.jpg");
+  display: grid;
+  object-fit: absolute;
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+.card-5 {
+  background-image: url("./card-5.jpg");
+  display: grid;
+  object-fit: absolute;
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+.card-6 {
+  background-image: url("./card-6.jpg");
+  display: grid;
+  object-fit: absolute;
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+.card-1:hover {
+  opacity: 0.965;
+  box-shadow: 5px 5px 5px 5px rgb(26, 27, 25);
+  transform: scale(1.1);
+}
+.card-2:hover {
+  opacity: 0.965;
+  box-shadow: 5px 5px 5px 5px rgb(26, 27, 25);
+  transform: scale(1.1);
+}
+.card-3:hover {
+  opacity: 0.965;
+  box-shadow: 5px 5px 5px 5px rgb(26, 27, 25);
+  transform: scale(1.1);
+}
+.card-4:hover {
+  opacity: 0.965;
+  box-shadow: 5px 5px 5px 5px rgb(26, 27, 25);
+  transform: scale(1.1);
+}
+.card-5:hover {
+  opacity: 0.965;
+  box-shadow: 5px 5px 5px 5px rgb(26, 27, 25);
+  transform: scale(1.1);
+}
+.card-6:hover {
+  opacity: 0.965;
+  box-shadow: 5px 5px 5px 5px rgb(26, 27, 25);
+  transform: scale(1.1);
 }
