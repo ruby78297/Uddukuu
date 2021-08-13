@@ -65,5 +65,9 @@
   .des {
     color: white;
     opacity: 0;
+    font-size: large;
+  }
+  .services-title h2 {
+    font-size: 18px;
   }
 }
