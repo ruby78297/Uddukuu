@@ -11,19 +11,19 @@ const ServiceBreaker2 = () => {
         <div>
           <h3 className="section-Wraper-1-content Wraper-1-content ">
             {" "}
-            Trust Udukku, We will give a shape to your telents{" "}
+            Trust Udukku, We will give a shape to your talent{" "}
           </h3>
         </div>
         <div>
           <h3 className="section-Wraper-1-content  Wraper-2-content">
             {" "}
-            trust Udukku, We will give a shape to your telents{" "}
+            Trust Udukku, We will give a shape to your talent{" "}
           </h3>
         </div>
         <div>
           <h3 className="section-Wraper-1-content   Wraper-3-content ">
             {" "}
-            trust Udukku, We will give a shape to your telents{" "}
+            Trust Udukku, We will give a shape to your talent{" "}
           </h3>
         </div>
       </div>
