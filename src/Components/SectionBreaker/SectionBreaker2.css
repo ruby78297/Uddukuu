@@ -40,6 +40,7 @@
   border: 2px solid #fff;
   background-color: rgb(51, 48, 48);
   color: #fff;
+  text-align: center;
 }
 .section-Wraper-1-content:hover {
   transform: skew(2deg, 0deg, 2deg);

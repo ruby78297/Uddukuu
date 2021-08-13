@@ -6,25 +6,25 @@ const ServiceBreaker2 = () => {
     <div className="row section-Wraper">
       <div className=" section-Wraper-1">
         <div>
-          <h1 className="section-Wraper-0-content">How Udukku works</h1>
+          <h2 className="section-Wraper-0-content">How Udukku works</h2>
         </div>
         <div>
-          <h3 className="section-Wraper-1-content Wraper-1-content ">
+          <h4 className="section-Wraper-1-content Wraper-1-content ">
             {" "}
             Trust Udukku, We will give a shape to your talent{" "}
-          </h3>
+          </h4>
         </div>
         <div>
-          <h3 className="section-Wraper-1-content  Wraper-2-content">
+          <h4 className="section-Wraper-1-content  Wraper-2-content">
             {" "}
             Trust Udukku, We will give a shape to your talent{" "}
-          </h3>
+          </h4>
         </div>
         <div>
-          <h3 className="section-Wraper-1-content   Wraper-3-content ">
+          <h4 className="section-Wraper-1-content   Wraper-3-content ">
             {" "}
             Trust Udukku, We will give a shape to your talent{" "}
-          </h3>
+          </h4>
         </div>
       </div>
 
