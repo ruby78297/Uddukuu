@@ -10,7 +10,7 @@ const Services = () => {
         <h2> Discover Top Music Production Pros </h2>
       </div>
       <div className="services">
-        <div className="card-1">
+        <div className="card-1 service-card ">
           <Cards
             id={CardData[0].id}
             title={CardData[0].title}
@@ -18,7 +18,7 @@ const Services = () => {
             image={CardData[0].image}
           ></Cards>
         </div>
-        <div className="card-2">
+        <div className="card-2 service-card">
           {" "}
           <Cards
             id={CardData[1].id}
@@ -28,7 +28,7 @@ const Services = () => {
           ></Cards>
         </div>
 
-        <div className="card-3">
+        <div className="card-3 service-card">
           {" "}
           <Cards
             id={CardData[2].id}
@@ -38,7 +38,7 @@ const Services = () => {
           ></Cards>
         </div>
 
-        <div className="card-4">
+        <div className="card-4 service-card">
           <Cards
             id={CardData[3].id}
             title={CardData[3].title}
@@ -47,7 +47,7 @@ const Services = () => {
           ></Cards>
         </div>
 
-        <div className="card-5">
+        <div className="card-5 service-card">
           <Cards
             id={CardData[4].id}
             title={CardData[4].title}
@@ -56,7 +56,7 @@ const Services = () => {
           ></Cards>
         </div>
 
-        <div className="card-6">
+        <div className="card-6 service-card">
           <Cards
             id={CardData[5].id}
             title={CardData[5].title}

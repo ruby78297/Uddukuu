@@ -33,11 +33,7 @@
   width: 290px;
   border-radius: 20px;
 }
-/* .swiper-pagination {
-}
-.swiper-navigation:hover {
-  transform: scale(1.5);
-} */
+
 @media screen and (max-width: 768px) {
   .parent {
     height: 60vh;
