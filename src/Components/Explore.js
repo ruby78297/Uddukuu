@@ -1,4 +1,2 @@
-const Explore = () => {
-  return <div> Hello To Explore </div>;
-};
+const Explore = () => {};
 export default Explore;

@@ -8,11 +8,10 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import Explore from "./Components/Explore";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App /> <Explore />
+    <App />
   </BrowserRouter>,
 
   document.getElementById("root")

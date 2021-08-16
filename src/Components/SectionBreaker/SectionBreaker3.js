@@ -3,7 +3,7 @@ import "./SectionBreaker3.css";
 
 const SectionBreaker3 = () => {
   return (
-    <div className="footer-subscription">
+    <div className="SectionBreaker3-content">
       {" "}
       <h2> Wish to make your music stand out? </h2>
       <h3>
