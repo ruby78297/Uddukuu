@@ -1,5 +1,5 @@
 .grid-container {
-  background-color: #fff;
+  background-color: teal;
   height: 25rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 768px) {
   .grid-container {
-    background-color: rgb(231, 228, 216);
+    background-color: teal;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 60px;

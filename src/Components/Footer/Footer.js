@@ -2,33 +2,11 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import Button from "../button/Button";
+import logo from "../Banner/Navbar/udukku-logo.png";
 
 function Footer() {
   return (
     <div className="footer-container">
-      {/* <div className="row">
-        <section className="footer-subscription">
-          <p className="footer-subscription-heading">Join Us anytime</p>
-          <p className="footer-subscription-text">
-            You can unsubscribe at any time.
-          </p>
-          <div className="input-areas">
-            <form>
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                className="footer-input"
-              />
-
-              <Button buttonStyle="btn--outline" className="fbtn">
-                Subscribe
-              </Button>
-            </form>
-          </div>
-        </section>
-      </div> */}
-
       <div className="footer-links">
         <div className=" footer-link-wrapper">
           <div className="row">
@@ -87,9 +65,9 @@ function Footer() {
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <Link to="/" className="social-logo">
+            <Link to="/">
               {" "}
-              uddukku
+              <img src={logo} alt="uddukku" className="logo" />
             </Link>
           </div>
 

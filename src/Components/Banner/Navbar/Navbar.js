@@ -17,14 +17,10 @@ const Navbar = () => {
         <Link to="/explore" className="explore">
           <li>Explore</li>
         </Link>
-
-        <Link to="/tracks" className="tracks">
-          <li>Tracks</li>
+        <Link to="/Soundbank" className="soundbank">
+          <li>Sound Bank</li>
         </Link>
-        <Link to="/newtrack" className="newtrack">
-          <li>New Track</li>
-        </Link>
-        <Link to="/registration" className="registration">
+        <Link to="/register" className="register">
           <li>Register</li>
         </Link>
         <Link to="/login" className="login">

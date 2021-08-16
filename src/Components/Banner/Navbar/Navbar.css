@@ -23,9 +23,8 @@
 }
 .explore,
 .login,
-.tracks,
-.newtrack,
-.registration {
+.soundbank,
+.register {
   text-decoration: none;
   color: white;
   font-size: 15px;
@@ -53,9 +52,10 @@
   }
   .mobile-nav-list {
     display: block;
-    position: absolute;
+    text-align: center;
     list-style: none;
-    background-color: rgb(93, 136, 132);
+    position: absolute;
+    background-color: teal;
     top: 75px;
     left: 0;
     transition: all 0.5s ease-out;
@@ -64,9 +64,8 @@
 
   .explore,
   .login,
-  .tracks,
-  .newtrack,
-  .registration {
+  .soundbank,
+  .register {
     color: rgb(224, 212, 212);
     text-align: center;
     padding: 32px;

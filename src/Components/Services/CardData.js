@@ -31,7 +31,7 @@ export const CardData = [
   },
   {
     id: 6,
-    title: "Session Musicians",
+    title: "Instrumentalists",
     des: "Key to hit your music, hire from our best Session musicians",
     image: "",
   },

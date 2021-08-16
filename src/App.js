@@ -16,7 +16,7 @@ function App() {
       <Services />
       <MoreCategories />
       <SectionBreaker />
-      {/* <CardCarousel /> */}
+      <CardCarousel />
       <SectionBreaker2 />
       <SectionBreaker3 />
       <Footer />

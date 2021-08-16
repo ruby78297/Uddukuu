@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Explore from "../Explore";
 import Login from "../Login";
-import Tracks from "../Tracks";
-import NewTrack from "../NewTracks";
+import Register from "../Register";
+import SoundBank from "../SoundBank";
 import Navbar from "./Navbar/Navbar";
 import SearchBar from "./SearchBar/SearchBar";
 import "./Banner.css";
@@ -17,10 +17,10 @@ const Banner = () => {
         <Navbar />
         {/* using switch to go to links from nav bar */}
         <Switch>
-          <Route path="/explore" component={Explore}></Route>
-          <Route path="/login" component={Login}></Route>
-          <Route path="/tracks" component={Tracks}></Route>
-          <Route path="/newtrack" component={NewTrack}></Route>
+          <Route path="/explore" component={Explore} exact></Route>
+          <Route path="/login" component={Login} exact></Route>
+          <Route path="/soundbank" component={SoundBank} exact></Route>
+          <Route path="/registration" component={Register} exact></Route>
         </Switch>
       </Router>
       <SearchBar></SearchBar>

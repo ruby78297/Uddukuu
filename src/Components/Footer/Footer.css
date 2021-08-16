@@ -89,15 +89,8 @@
   width: 240px;
 }
 .social-logo {
-  color: #fff;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-self: center;
-  margin-bottom: 16px;
+  height: 50;
+  width: 15%;
 }
 .website-rights {
   color: #fff;

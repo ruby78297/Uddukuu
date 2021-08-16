@@ -8,10 +8,12 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import Explore from "./Components/Explore";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />{" "}
+    <App /> <Explore />
   </BrowserRouter>,
+
   document.getElementById("root")
 );
