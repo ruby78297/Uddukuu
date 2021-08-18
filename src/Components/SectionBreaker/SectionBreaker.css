@@ -10,6 +10,11 @@
 .breker1-title {
   margin-top: 30px;
 }
+.servicebreaker-text {
+  font-size: x-large;
+  color: black;
+  margin-top: 10px;
+}
 .service-2-image {
   margin-left: 50px;
 }
@@ -22,5 +27,10 @@
     grid-gap: 60px;
     justify-items: center;
     height: 60rem;
+  }
+  .servicebreaker-text {
+    font-size: x-large;
+    color: black;
+    margin-top: 10px;
   }
 }

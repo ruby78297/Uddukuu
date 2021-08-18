@@ -1,27 +1,24 @@
 .Banner-item {
-  background-image: url("./Banner.jpg");
   background-size: 100% 100%;
-
-  animation: slide 10s infinite;
-
+  animation: slide 15s infinite linear;
   height: 100vh;
 }
 @keyframes slide {
   0% {
     background-image: url("./Banner.jpg");
   }
-  25% {
+  33% {
     background-image: url("./Banner1.jpg");
   }
   50% {
     background-image: url("./Banner2.jpg");
   }
-  75% {
+  100% {
     background-image: url("./Banner3.jpg");
   }
-  100% {
+  /* 100% {
     background-image: url("./Banner4.jpg");
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {

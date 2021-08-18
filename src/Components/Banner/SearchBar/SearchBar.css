@@ -6,12 +6,10 @@
 .quote-container {
   height: 50%;
   display: flex;
-  justify-content: left;
-  align-items: top;
 }
 .quote {
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 80px;
+  margin-left: 70px;
 }
 .search-container {
   height: 50%;
@@ -45,6 +43,12 @@ input {
 p {
   color: rgb(94, 189, 212);
 }
+#quote-1 {
+  font-size: xx-large;
+}
+#quote-2 {
+  font-size: x-large;
+}
 
 @media screen and (max-width: 768px) {
   .container-1 {
@@ -65,7 +69,7 @@ p {
     align-items: top;
   }
   .quote {
-    margin-top: 40px;
+    margin-top: 70px;
     margin-left: 40px;
   }
 
@@ -84,5 +88,11 @@ p {
     border: none;
     border-radius: 25px;
     color: rgb(241, 248, 246);
+  }
+  #quote-1 {
+    font-size: x-large;
+  }
+  #quote-2 {
+    font-size: large;
   }
 }

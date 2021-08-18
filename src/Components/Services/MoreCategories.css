@@ -3,6 +3,7 @@
   padding: 30px;
   text-align: center;
   color: rgb(24, 23, 22);
+  font-size: xx-large;
 }
 #cat:hover {
   cursor: pointer;
@@ -18,5 +19,10 @@
     padding: 30px;
     text-align: center;
     color: rgb(24, 23, 22);
+    font-size: x-large;
+  }
+  #cat:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 }

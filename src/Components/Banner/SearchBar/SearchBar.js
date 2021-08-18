@@ -7,10 +7,10 @@ const SearchBar = () => {
       <div className="quote-container">
         <div className="quote">
           {" "}
-          <p>
+          <p id="quote-1">
             <h2> Welcome to Udukku </h2>{" "}
           </p>
-          <p>
+          <p id="quote-2">
             {" "}
             <h3> The Music World </h3>
           </p>

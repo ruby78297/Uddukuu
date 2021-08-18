@@ -6,9 +6,7 @@ import { CardData } from "./CardData";
 const Services = () => {
   return (
     <div>
-      <div className="services-title">
-        <h2> Discover Top Music Production Pros </h2>
-      </div>
+      <div className="services-title">Discover Top Music Production Pros</div>
       <div className="services">
         <div className="card-1 service-card ">
           <Cards

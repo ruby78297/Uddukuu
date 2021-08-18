@@ -11,7 +11,7 @@ const ServiceBreaker = () => {
         <div className="col-sm    ">
           <img src={music} height="200" width="200" alt="img"></img>
           <div className="breaker1-title">
-            <h4>Sounds like music.</h4>
+            <h4 className="servicebreaker-text">Sounds like music</h4>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@ const ServiceBreaker = () => {
         <div className="col-sm ">
           <img src={music2} height="200" width="200" alt="img"></img>
           <div className="breaker1-title">
-            <h4> The Music speaks.</h4>
+            <h4 className="servicebreaker-text"> The Music speaks</h4>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ const ServiceBreaker = () => {
         <div className="col-sm    ">
           <img src={music1} height="200" width="200" alt="img"></img>
           <div className="breaker1-title">
-            <h4>Drift into the Music.</h4>
+            <h4 className="servicebreaker-text">Drift into the Music</h4>
           </div>
         </div>
       </div>
