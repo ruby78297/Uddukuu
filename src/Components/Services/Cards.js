@@ -1,6 +1,5 @@
 import React from "react";
 import "./Cards.css";
-import { CardData } from "./CardData";
 
 const Cards = (props) => {
   return (
@@ -15,7 +14,7 @@ const Cards = (props) => {
         );
       })} */}
 
-      <div className="image">{props.image}</div>
+      {/* <div className="image">{props.image}</div> */}
       <div className="title">{props.title}</div>
       <div className="des">{props.des}</div>
     </div>

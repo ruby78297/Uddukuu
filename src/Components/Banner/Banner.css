@@ -1,6 +1,6 @@
 .Banner-item {
   background-size: 100% 100%;
-  animation: slide 15s infinite linear;
+  animation: slide 10s infinite;
   height: 100vh;
 }
 @keyframes slide {
@@ -21,9 +21,8 @@
   } */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
   .Banner-item {
-    background-color: rgb(41, 146, 111);
     display: block;
     justify-content: center;
     background-size: 100% 100%;

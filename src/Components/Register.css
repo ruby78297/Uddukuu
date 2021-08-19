@@ -1,0 +1,22 @@
+.register-signin-0 {
+  display: inline-block;
+  letter-spacing: 0.025em;
+  color: teal;
+  font-size: medium;
+}
+
+.register-signin {
+  background-color: teal;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.register-signin:hover {
+  transition: all 0.3s ease-in-out;
+  background: rgb(58, 175, 175);
+  color: #fff;
+  box-shadow: rgb(238, 237, 237) 2px;
+}

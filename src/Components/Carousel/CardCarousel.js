@@ -25,12 +25,13 @@ SwiperCore.use([Navigation, Pagination]);
 const CardCarousel = () => {
   return (
     <div className="parent">
-      <div className="carousel-container">
+      <div className="carousel-container-1">
         <Swiper
           spaceBetween={0}
           slidesPerView={3}
           grabCursor={true}
           navigation
+          loop={false}
           // pagination={{ clickable: false }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
@@ -38,51 +39,142 @@ const CardCarousel = () => {
           <SwiperSlide className="slider">
             {({ isNext }) => (
               // eslint-disable-next-line jsx-a11y/alt-text
-              <img
-                className={isNext ? "active" : "not-active"}
-                src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=731&q=80"
-              ></img>
+              <div className={isNext ? "active" : "not-active"}>
+                <img
+                  className="card-images"
+                  src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=731&q=80"
+                ></img>{" "}
+              </div>
             )}
           </SwiperSlide>
 
           <SwiperSlide className="slider">
             {({ isNext }) => (
-              <img
-                className={isNext ? "active" : "not-active"}
-                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              ></img>
+              <div className={isNext ? "active" : "not-active"}>
+                <img
+                  className="card-images"
+                  src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                ></img>
+              </div>
             )}
           </SwiperSlide>
           <SwiperSlide className="slider">
             {({ isNext }) => (
-              <img
-                className={isNext ? "active" : "not-active"}
-                src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
-              ></img>
+              <div className={isNext ? "active" : "not-active"}>
+                {" "}
+                <img
+                  className="card-images"
+                  src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
+                ></img>
+              </div>
             )}
           </SwiperSlide>
           <SwiperSlide className="slider">
             {({ isNext }) => (
-              <img
-                className={isNext ? "active" : "not-active"}
-                src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
-              ></img>
+              <div className={isNext ? "active" : "not-active"}>
+                {" "}
+                <img
+                  className="card-images"
+                  src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                ></img>
+              </div>
             )}
           </SwiperSlide>
           <SwiperSlide className="slider">
             {({ isNext }) => (
-              <img
-                className={isNext ? "active" : "not-active"}
-                src="https://images.unsplash.com/photo-1565103420311-8cbbc3cd87b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              ></img>
+              <div className={isNext ? "active" : "not-active"}>
+                {" "}
+                <img
+                  className="card-images"
+                  src="https://images.unsplash.com/photo-1565103420311-8cbbc3cd87b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                ></img>
+              </div>
             )}
           </SwiperSlide>
           <SwiperSlide className="slider">
             {({ isNext }) => (
-              <img
-                className={isNext ? "active" : "not-active"}
-                src="https://images.unsplash.com/photo-1468392788711-903a924761a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-              ></img>
+              <div className={isNext ? "active" : "not-active"}>
+                <img
+                  className="card-images"
+                  src="https://images.unsplash.com/photo-1468392788711-903a924761a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                ></img>
+              </div>
+            )}
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+      <div className="carousel-container-2">
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          navigation
+          loop={true}
+          // pagination={{ clickable: false }}
+        >
+          <SwiperSlide className="slider-1">
+            {({ isActive }) => (
+              // eslint-disable-next-line jsx-a11y/alt-text
+              <div className={isActive ? "active-1" : "not-active-1"}>
+                <img
+                  className="card-images-1"
+                  src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=731&q=80"
+                ></img>{" "}
+              </div>
+            )}
+          </SwiperSlide>
+
+          <SwiperSlide className="slider-1">
+            {({ isActive }) => (
+              <div className={isActive ? "active-1" : "not-active-1"}>
+                <img
+                  className="card-images-1"
+                  src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                ></img>
+              </div>
+            )}
+          </SwiperSlide>
+          <SwiperSlide className="slider-1">
+            {({ isActive }) => (
+              <div className={isActive ? "active-1" : "not-active-1"}>
+                {" "}
+                <img
+                  className="card-images-1"
+                  src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
+                ></img>
+              </div>
+            )}
+          </SwiperSlide>
+          <SwiperSlide className="slider-1">
+            {({ isActive }) => (
+              <div className={isActive ? "active-1" : "not-active-1"}>
+                {" "}
+                <img
+                  className="card-images-1"
+                  src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                ></img>
+              </div>
+            )}
+          </SwiperSlide>
+          <SwiperSlide className="slider-1">
+            {({ isActive }) => (
+              <div className={isActive ? "active-1" : "not-active-1"}>
+                {" "}
+                <img
+                  className="card-images-1"
+                  src="https://images.unsplash.com/photo-1565103420311-8cbbc3cd87b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                ></img>
+              </div>
+            )}
+          </SwiperSlide>
+          <SwiperSlide className="slider-1">
+            {({ isActive }) => (
+              <div className={isActive ? "active-1" : "not-active-1"}>
+                <img
+                  className="card-images-1"
+                  src="https://images.unsplash.com/photo-1468392788711-903a924761a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                ></img>
+              </div>
             )}
           </SwiperSlide>
         </Swiper>
