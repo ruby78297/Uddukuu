@@ -9,41 +9,52 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
-
-// import { CardData } from "../Services/CardData";
-// import { Carousel } from "react-bootstrap";
-// import image1 from "./image1.jpg";
-// import image2 from "./image2.jpg";
-// import image3 from "./image3.jpg";
-// import image4 from "./image4.jpg";
-// import image5 from "./image5.jpg";
-// import image6 from "./image6.jpg";
-// import image7 from "./image7.jpg";
+import { SliderData } from "./SliderData";
+import Ratings from "./Ratings";
 
 SwiperCore.use([Navigation, Pagination]);
 
 const CardCarousel = () => {
   return (
     <div className="parent">
+      <div className="slider-top-title">
+        <p id="slider-top-title-id"> Meet our top-6 of the week</p>
+      </div>
       <div className="carousel-container-1">
         <Swiper
-          spaceBetween={0}
+          spaceBetween={30}
           slidesPerView={3}
           grabCursor={true}
           navigation
-          loop={false}
+          loop={true}
           // pagination={{ clickable: false }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
+          // onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide className="slider">
             {({ isNext }) => (
               // eslint-disable-next-line jsx-a11y/alt-text
               <div className={isNext ? "active" : "not-active"}>
-                <img
-                  className="card-images"
-                  src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=731&q=80"
-                ></img>{" "}
+                <div className="slider-image-container">
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[0].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>
+                  </div>
+                </div>
+                <div className="slider-title slider-title flex justify-center items-center text-2xl font-bold">
+                  {SliderData[0].title}{" "}
+                </div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+
+                <div className="slider-des flex justify-center items-center text-lg p-2 ">
+                  {SliderData[0].des}{" "}
+                </div>
               </div>
             )}
           </SwiperSlide>
@@ -51,10 +62,51 @@ const CardCarousel = () => {
           <SwiperSlide className="slider">
             {({ isNext }) => (
               <div className={isNext ? "active" : "not-active"}>
-                <img
-                  className="card-images"
-                  src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                ></img>
+                <div className="slider-image-container">
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[1].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>
+                  </div>
+                </div>
+                <div className="slider-title slider-title flex justify-center items-center text-2xl font-bold">
+                  {SliderData[1].title}
+                </div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des flex justify-center items-center text-lg p-2 ">
+                  {SliderData[1].des}
+                </div>
+              </div>
+            )}
+          </SwiperSlide>
+          <SwiperSlide className="slider">
+            {({ isNext }) => (
+              <div className={isNext ? "active" : "not-active"}>
+                <div className="slider-image-container">
+                  {" "}
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[2].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>
+                  </div>
+                </div>
+                <div className="slider-title slider-title flex justify-center items-center text-2xl font-bold">
+                  {SliderData[2].title}
+                </div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des flex justify-center items-center text-lg p-2 ">
+                  {SliderData[2].des}
+                </div>
               </div>
             )}
           </SwiperSlide>
@@ -62,10 +114,25 @@ const CardCarousel = () => {
             {({ isNext }) => (
               <div className={isNext ? "active" : "not-active"}>
                 {" "}
-                <img
-                  className="card-images"
-                  src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
-                ></img>
+                <div className="slider-image-container">
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[3].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>
+                  </div>
+                </div>
+                <div className="slider-title slider-title flex justify-center items-center text-2xl font-bold">
+                  {SliderData[3].title}
+                </div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des flex justify-center items-center text-lg p-2 ">
+                  {SliderData[3].des}
+                </div>
               </div>
             )}
           </SwiperSlide>
@@ -73,36 +140,57 @@ const CardCarousel = () => {
             {({ isNext }) => (
               <div className={isNext ? "active" : "not-active"}>
                 {" "}
-                <img
-                  className="card-images"
-                  src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
-                ></img>
+                <div className="slider-image-container">
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[4].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>
+                  </div>
+                </div>
+                <div className="slider-title slider-title flex justify-center items-center text-2xl font-bold">
+                  {SliderData[4].title}
+                </div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des flex justify-center items-center text-lg p-2 ">
+                  {SliderData[4].des}
+                </div>
               </div>
             )}
           </SwiperSlide>
           <SwiperSlide className="slider">
             {({ isNext }) => (
               <div className={isNext ? "active" : "not-active"}>
-                {" "}
-                <img
-                  className="card-images"
-                  src="https://images.unsplash.com/photo-1565103420311-8cbbc3cd87b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                ></img>
-              </div>
-            )}
-          </SwiperSlide>
-          <SwiperSlide className="slider">
-            {({ isNext }) => (
-              <div className={isNext ? "active" : "not-active"}>
-                <img
-                  className="card-images"
-                  src="https://images.unsplash.com/photo-1468392788711-903a924761a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-                ></img>
+                <div className="slider-image-container">
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[5].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>
+                  </div>
+                </div>
+                <div className="slider-title flex justify-center items-center text-2xl font-bold">
+                  {SliderData[5].title}
+                </div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des flex justify-center items-center text-lg p-2 ">
+                  {SliderData[5].des}
+                </div>
               </div>
             )}
           </SwiperSlide>
         </Swiper>
       </div>
+
+      {/* mobile view */}
 
       <div className="carousel-container-2">
         <Swiper
@@ -116,10 +204,21 @@ const CardCarousel = () => {
             {({ isActive }) => (
               // eslint-disable-next-line jsx-a11y/alt-text
               <div className={isActive ? "active-1" : "not-active-1"}>
-                <img
-                  className="card-images-1"
-                  src="https://images.unsplash.com/photo-1453090927415-5f45085b65c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=731&q=80"
-                ></img>{" "}
+                <div className="slider-image-container-1">
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[0].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>{" "}
+                  </div>
+                </div>
+                <div className="slider-title-1"> {SliderData[0].title}</div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des-1"> {SliderData[0].des}</div>
               </div>
             )}
           </SwiperSlide>
@@ -127,10 +226,22 @@ const CardCarousel = () => {
           <SwiperSlide className="slider-1">
             {({ isActive }) => (
               <div className={isActive ? "active-1" : "not-active-1"}>
-                <img
-                  className="card-images-1"
-                  src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                ></img>
+                <div className="slider-image-container-1">
+                  <div className="slider-images">
+                    {" "}
+                    <img
+                      src={SliderData[1].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>{" "}
+                  </div>
+                </div>
+                <div className="slider-title-1"> {SliderData[1].title}</div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des-1"> {SliderData[1].des}</div>
               </div>
             )}
           </SwiperSlide>
@@ -138,10 +249,22 @@ const CardCarousel = () => {
             {({ isActive }) => (
               <div className={isActive ? "active-1" : "not-active-1"}>
                 {" "}
-                <img
-                  className="card-images-1"
-                  src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
-                ></img>
+                <div className="slider-image-container-1">
+                  <div className="slider-images">
+                    {" "}
+                    <img
+                      src={SliderData[2].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>{" "}
+                  </div>
+                </div>
+                <div className="slider-title-1"> {SliderData[2].title}</div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des-1"> {SliderData[2].des}</div>
               </div>
             )}
           </SwiperSlide>
@@ -149,10 +272,22 @@ const CardCarousel = () => {
             {({ isActive }) => (
               <div className={isActive ? "active-1" : "not-active-1"}>
                 {" "}
-                <img
-                  className="card-images-1"
-                  src="https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
-                ></img>
+                <div className="slider-image-container-1">
+                  <div className="slider-images">
+                    {" "}
+                    <img
+                      src={SliderData[3].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>{" "}
+                  </div>
+                </div>
+                <div className="slider-title-1"> {SliderData[3].title}</div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des-1"> {SliderData[3].des}</div>
               </div>
             )}
           </SwiperSlide>
@@ -160,24 +295,52 @@ const CardCarousel = () => {
             {({ isActive }) => (
               <div className={isActive ? "active-1" : "not-active-1"}>
                 {" "}
-                <img
-                  className="card-images-1"
-                  src="https://images.unsplash.com/photo-1565103420311-8cbbc3cd87b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                ></img>
+                <div className="slider-image-container-1">
+                  <div className="slider-images">
+                    {" "}
+                    <img
+                      src={SliderData[4].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>{" "}
+                  </div>
+                </div>
+                <div className="slider-title-1"> {SliderData[4].title}</div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des-1"> {SliderData[4].des}</div>
               </div>
             )}
           </SwiperSlide>
           <SwiperSlide className="slider-1">
             {({ isActive }) => (
               <div className={isActive ? "active-1" : "not-active-1"}>
-                <img
-                  className="card-images-1"
-                  src="https://images.unsplash.com/photo-1468392788711-903a924761a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-                ></img>
+                <div className="slider-image-container-1">
+                  <div className="slider-images">
+                    <img
+                      src={SliderData[5].image}
+                      alt="slideimage"
+                      className="slide-title-image"
+                    ></img>{" "}
+                  </div>
+                </div>
+                <div className="slider-title-1"> {SliderData[5].title}</div>
+                <div className="ratings">
+                  {" "}
+                  <Ratings />
+                </div>
+                <div className="slider-des-1"> {SliderData[5].des}</div>
               </div>
             )}
           </SwiperSlide>
         </Swiper>
+      </div>
+
+      {/* explore more link */}
+      <div className="slider-explore">
+        <p id="slider-explore-more"> Explore More </p>
       </div>
     </div>
   );

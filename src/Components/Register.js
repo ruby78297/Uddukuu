@@ -65,7 +65,7 @@ const Register = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
-      {isAuth() ? <Redirect to="/" /> : null}
+      {/* {isAuth() ? <Redirect to="/" /> : null} */}
       <ToastContainer />
       <div className="max-w-screen-xl m-0 sm:m-20 bg-white shadow sm:rounded-lg flex justify-center flex-1">
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
@@ -80,28 +80,28 @@ const Register = () => {
             >
               <div className="mx-auto max-w-xs relative ">
                 <input
-                  className="w-full px-8 py-4 login-main-input"
+                  className="w-full px-8 py-4 reg-main-input"
                   type="text"
                   placeholder="Name"
                   onChange={handleChange("name")}
                   value={name}
                 />
                 <input
-                  className="w-full px-8 py-4 login-main-input mt-5"
+                  className="w-full px-8 py-4 reg-main-input mt-5"
                   type="email"
                   placeholder="Email"
                   onChange={handleChange("email")}
                   value={email}
                 />
                 <input
-                  className="w-full px-8 py-4 login-main-input mt-5"
+                  className="w-full px-8 py-4 reg-main-input mt-5"
                   type="password"
                   placeholder="Password"
                   onChange={handleChange("password1")}
                   value={password1}
                 />
                 <input
-                  className="w-full px-8 py-4 login-main-input  mt-5"
+                  className="w-full px-8 py-4 reg-main-input  mt-5"
                   type="password"
                   placeholder="Confirm Password"
                   onChange={handleChange("password2")}
@@ -109,7 +109,7 @@ const Register = () => {
                 />
                 <button
                   type="submit"
-                  className="mt-5 tracking-wide login-main-input-1 py-4"
+                  className="mt-5 tracking-wide reg-main-input-1 py-4"
                 >
                   <i className="fas fa-user-plus fa 1x w-6  -ml-2 text-white" />
                   <span className="ml-3">{textChange}</span>

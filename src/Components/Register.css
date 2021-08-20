@@ -1,3 +1,30 @@
+.reg-main-input {
+  background-color: #fff;
+  border-radius: 1em;
+  font-size: small;
+  border: 1px solid #e2e2e2;
+}
+.reg-main-input::placeholder {
+  color: teal;
+}
+.reg-main-input:focus {
+  border: 2px solid teal;
+  background-color: #e6e6e6;
+}
+.reg-main-input-1 {
+  font-weight: 600;
+  background: teal;
+  color: #fff;
+  width: 100%;
+  border-radius: 1em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.reg-main-input-1:hover {
+  background: #189494;
+  transition: all 0.5s ease-in-out;
+}
 .register-signin-0 {
   display: inline-block;
   letter-spacing: 0.025em;

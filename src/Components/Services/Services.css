@@ -9,6 +9,10 @@
   justify-content: center;
   align-content: center;
 }
+.servicesmobile {
+  display: none;
+}
+
 .services-title {
   height: 50px;
   padding: 40px;
@@ -48,25 +52,56 @@
 
 @media screen and (max-width: 820px) {
   .services {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 250px);
-    grid-auto-rows: 250px;
-    grid-gap: 30px;
-    padding: 20px;
-    text-align: center;
+    display: none;
+  }
+
+  .services-parent {
+    height: 35vh;
+    /* border: 2px solid black; */
+  }
+  .servicesmobile {
+    display: block;
+    display: flex;
+    height: 70%;
+    width: 100%;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .service-card-mobile {
+    margin-top: 15px;
+    display: flex;
+    height: 22vh;
+    width: 90%;
+
+    border: 2px solid black;
+    object-fit: absolute;
+    background-size: 100% 100%;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
   }
   .title {
     color: white;
     font-weight: bolder;
-    margin-top: 80px;
+    margin-top: 0%;
     font-size: x-large;
+  }
+  .card-container:hover .title {
+    margin-top: 0px;
+    cursor: pointer;
   }
 
   .des {
-    color: white;
-    opacity: 0;
-    font-size: large;
+    display: none;
   }
   .services-title {
     font-size: 18px;

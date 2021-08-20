@@ -99,19 +99,21 @@ const Login = ({ history }) => {
           toast.error(err.response.data.errors);
         });
     } else {
-      toast.error("Please fill all fields");
+      toast.error(
+        <div className="text-red-700 ">"Please fill all fields"</div>
+      );
     }
   };
   return (
     <div className="min-h-screen login-main-container">
-      {isAuth() ? <Redirect to="/" /> : null}
+      {/* {isAuth() ? <Redirect to="/" /> : null} */}
       <ToastContainer />
       <div className="max-w-screen-xl m-0 sm:m-20 sm:rounded-lg  flex-1 login-main-container-0">
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
           <div className="mt-12 flex flex-col items-center">
-            <h1 className="text-2xl xl:text-3xl font-extrabold">
+            <div className="text-2xl xl:text-3xl font-extrabold">
               Sign In for Udukku
-            </h1>
+            </div>
             <div className="w-full flex-1 mt-8 login-main-container-1">
               <div className="flex flex-col items-center">
                 <GoogleLogin

@@ -11,53 +11,37 @@ function Footer() {
         <div className=" footer-link-wrapper">
           <div className="row">
             <div className=" col-md footer-link-items footer-link-items-1">
-              <h2>About Us</h2>
-              <Link to="/sign-up">How it works</Link>
-
-              <Link to="/">Testimonials</Link>
-
-              <Link to="/">Careers</Link>
-
-              <Link to="/">Investors</Link>
-
-              <Link to="/">Terms of Service</Link>
+              <p className="footer-pera-0">
+                {" "}
+                UDUKKU is a marketplace of the India’s top music production
+                talent
+              </p>
+              <p className="text-teal-400">
+                info@Udukku.com <br />
+                +(91)7487848842
+              </p>
             </div>
             <div className=" col-md footer-link-items footer-link-items-2">
-              <h2>Contact Us</h2>
-              <Link to="/sign-up">How it works</Link>
+              <Link to="/sign-up">Sign up as a provider</Link>
 
-              <Link to="/">Testimonials</Link>
+              <Link to="/">Sign in</Link>
 
-              <Link to="/">Careers</Link>
+              <Link to="/">About Us</Link>
 
-              <Link to="/">Investors</Link>
+              <Link to="/">User Reviews</Link>
 
-              <Link to="/">Terms of Service</Link>
+              <Link to="/">FAQ</Link>
             </div>
 
             <div className=" col-md footer-link-items footer-link-items-3">
               <h2>About Us</h2>
-              <Link to="/sign-up">How it works</Link>
+              <Link to="/sign-up">Terms</Link>
 
-              <Link to="/">Testimonials</Link>
+              <Link to="/">Tutorials</Link>
 
-              <Link to="/">Careers</Link>
+              <Link to="/">Privacy</Link>
 
-              <Link to="/">Investors</Link>
-
-              <Link to="/">Terms of Service</Link>
-            </div>
-            <div className=" col-md footer-link-items footer-link-items-4">
-              <h2>Contact Us</h2>
-              <Link to="/sign-up">How it works</Link>
-
-              <Link to="/">Testimonials</Link>
-
-              <Link to="/">Careers</Link>
-
-              <Link to="/">Investors</Link>
-
-              <Link to="/">Terms of Service</Link>
+              <Link to="/">Contact Us</Link>
             </div>
           </div>
         </div>
@@ -71,7 +55,7 @@ function Footer() {
             </Link>
           </div>
 
-          <small className="website-rights">udukku © 2021</small>
+          <div className="website-rights">udukku © 2021</div>
           <div className="social-icons">
             <Link
               className="social-icon-link facebook"

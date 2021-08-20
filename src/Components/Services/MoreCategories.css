@@ -1,17 +1,17 @@
 #cat {
-  margin-top: -50px;
+  margin-top: -60px;
   padding: 30px;
   text-align: center;
   color: rgb(24, 23, 22);
-  font-size: xx-large;
+  font-size: x-large;
+  text-decoration: underline;
 }
 #cat:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 .more {
-  padding-top: 10 px;
-  border-bottom: 1px solid rgb(80, 69, 69);
+  margin-top: 0 px;
 }
 @media screen and (max-width: 768px) {
   #cat {
@@ -19,7 +19,7 @@
     padding: 30px;
     text-align: center;
     color: rgb(24, 23, 22);
-    font-size: x-large;
+    font-size: large;
   }
   #cat:hover {
     cursor: pointer;
