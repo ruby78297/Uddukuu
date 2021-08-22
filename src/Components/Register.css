@@ -1,3 +1,6 @@
+.reg-main-container {
+  margin: 2px;
+}
 .reg-main-input {
   background-color: #fff;
   border-radius: 1em;
@@ -46,4 +49,12 @@
   background: rgb(58, 175, 175);
   color: #fff;
   box-shadow: rgb(238, 237, 237) 2px;
+}
+@media screen and (max-width: 820px) {
+  .reg-main-input {
+    background-color: #fff;
+    border-radius: 1em;
+    font-size: small;
+    border: 1px solid #e2e2e2;
+  }
 }

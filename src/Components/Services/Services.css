@@ -9,6 +9,11 @@
   justify-content: center;
   align-content: center;
 }
+.services-parent {
+  padding-left: 20px;
+  padding-right: 20px;
+  /* border: 2px solid black; */
+}
 .servicesmobile {
   display: none;
 }
@@ -36,6 +41,7 @@
   opacity: 0;
 }
 .card-container:hover .des {
+  transform: translateY(-30px);
   cursor: pointer;
   opacity: 1;
 }
@@ -46,7 +52,7 @@
   margin-top: 115px;
 }
 .card-container:hover .title {
-  margin-top: 80px;
+  transform: translateY(-40px);
   cursor: pointer;
 }
 
@@ -56,7 +62,10 @@
   }
 
   .services-parent {
+    padding-left: 0px;
+    padding-right: 0px;
     height: 35vh;
+
     /* border: 2px solid black; */
   }
   .servicesmobile {
@@ -76,11 +85,11 @@
     border-radius: 10px;
   }
   .service-card-mobile {
-    margin-top: 15px;
+    margin-top: 100px;
     display: flex;
     height: 22vh;
     width: 90%;
-
+    background-color: chocolate;
     border: 2px solid black;
     object-fit: absolute;
     background-size: 100% 100%;
@@ -92,7 +101,7 @@
   .title {
     color: white;
     font-weight: bolder;
-    margin-top: 0%;
+    margin-top: -10px;
     font-size: x-large;
   }
   .card-container:hover .title {

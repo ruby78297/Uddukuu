@@ -80,7 +80,6 @@
 }
 #slider-explore-more:hover {
   cursor: pointer;
-  transform: scale(1.1);
 }
 .slider-explore {
   margin-top: 0 px;
@@ -214,6 +213,5 @@
   }
   #slider-explore-more:hover {
     cursor: pointer;
-    transform: scale(1.1);
   }
 }

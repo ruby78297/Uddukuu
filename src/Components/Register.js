@@ -64,44 +64,44 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
+    <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center reg-main-container">
       {/* {isAuth() ? <Redirect to="/" /> : null} */}
       <ToastContainer />
       <div className="max-w-screen-xl m-0 sm:m-20 bg-white shadow sm:rounded-lg flex justify-center flex-1">
-        <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
-          <div className="mt-12 flex flex-col items-center">
+        <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-3">
+          <div className="mt-6 flex flex-col items-center">
             <div className="text-2xl xl:text-3xl font-bold text-teal-700">
               Not a member ? Sign Up now
             </div>
 
             <form
-              className="w-full flex-1 mt-8 text-teal-500"
+              className="w-full flex-1 mt-4 text-teal-500"
               onSubmit={handleSubmit}
             >
               <div className="mx-auto max-w-xs relative ">
                 <input
-                  className="w-full px-8 py-4 reg-main-input"
+                  className="w-full px-12 py-3 reg-main-input"
                   type="text"
                   placeholder="Name"
                   onChange={handleChange("name")}
                   value={name}
                 />
                 <input
-                  className="w-full px-8 py-4 reg-main-input mt-5"
+                  className="w-full px-12 py-3 reg-main-input mt-3"
                   type="email"
                   placeholder="Email"
                   onChange={handleChange("email")}
                   value={email}
                 />
                 <input
-                  className="w-full px-8 py-4 reg-main-input mt-5"
+                  className="w-full px-12 py-3 reg-main-input mt-3"
                   type="password"
                   placeholder="Password"
                   onChange={handleChange("password1")}
                   value={password1}
                 />
                 <input
-                  className="w-full px-8 py-4 reg-main-input  mt-5"
+                  className="w-full px-12 py-3 reg-main-input  mt-3"
                   type="password"
                   placeholder="Confirm Password"
                   onChange={handleChange("password2")}
@@ -109,20 +109,20 @@ const Register = () => {
                 />
                 <button
                   type="submit"
-                  className="mt-5 tracking-wide reg-main-input-1 py-4"
+                  className="mt-3 tracking-wide reg-main-input-1 py-3"
                 >
                   <i className="fas fa-user-plus fa 1x w-6  -ml-2 text-white" />
                   <span className="ml-3">{textChange}</span>
                 </button>
               </div>
-              <div className="my-12 border-b text-center">
+              <div className="my-10 border-b text-center">
                 <div className="leading-none px-2 register-signin-0   transform translate-y-1/2">
                   Or sign with email or social login
                 </div>
               </div>
               <div className="flex flex-col items-center">
                 <a
-                  className="w-full max-w-xs register-signin   py-3 mt-5"
+                  className="w-full max-w-xs register-signin   py-3 mt-3"
                   href="/login"
                   target="_self"
                 >
@@ -140,7 +140,6 @@ const Register = () => {
           ></div>
         </div>
       </div>
-      ;
     </div>
   );
 };

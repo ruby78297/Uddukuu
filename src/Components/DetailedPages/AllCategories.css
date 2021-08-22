@@ -2,3 +2,14 @@
   background-color: teal;
   height: 100rem;
 }
+.all-cat-cards {
+  background-color: rgb(90, 173, 173);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.texthere {
+  font-size: xx-large;
+  color: black;
+  align-self: center;
+}

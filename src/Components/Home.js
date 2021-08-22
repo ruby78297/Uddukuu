@@ -8,10 +8,12 @@ import SectionBreaker from "./SectionBreaker/SectionBreaker";
 import CardCarousel from "./Carousel/CardCarousel";
 import SectionBreaker2 from "./SectionBreaker/SectionBreakjer2";
 import SectionBreaker3 from "./SectionBreaker/SectionBreaker3";
+import ServicesTitle from "./Services/ServicesTitle";
 const Home = () => {
   return (
     <div>
       <Banner />
+      <ServicesTitle />
       <Services />
       <MoreCategories />
       <SectionBreaker />

@@ -8,41 +8,38 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-links">
-        <div className=" footer-link-wrapper">
-          <div className="row">
-            <div className=" col-md footer-link-items footer-link-items-1">
-              <p className="footer-pera-0">
-                {" "}
-                UDUKKU is a marketplace of the India’s top music production
-                talent
-              </p>
-              <p className="text-teal-400">
-                info@Udukku.com <br />
-                +(91)7487848842
-              </p>
-            </div>
-            <div className=" col-md footer-link-items footer-link-items-2">
-              <Link to="/sign-up">Sign up as a provider</Link>
+        <div className="row">
+          <div className=" col-md footer-link-items footer-link-items-1">
+            <p className="footer-pera-0 text-white">
+              {" "}
+              UDUKKU is a marketplace of the India’s top music production talent
+            </p>
+            <p className="text-teal-400 footer-pera-0 ">
+              info@Udukku.com <br />
+              +(91)7487848842
+            </p>
+          </div>
+          <div className=" col-md footer-link-items footer-link-items-2">
+            <Link to="/sign-up">Sign up as a provider</Link>
 
-              <Link to="/">Sign in</Link>
+            <Link to="/">Sign in</Link>
 
-              <Link to="/">About Us</Link>
+            <Link to="/">About Us</Link>
 
-              <Link to="/">User Reviews</Link>
+            <Link to="/">User Reviews</Link>
 
-              <Link to="/">FAQ</Link>
-            </div>
+            <Link to="/">FAQ</Link>
+          </div>
 
-            <div className=" col-md footer-link-items footer-link-items-3">
-              <h2>About Us</h2>
-              <Link to="/sign-up">Terms</Link>
+          <div className=" col-md footer-link-items footer-link-items-3">
+            <h2>About Us</h2>
+            <Link to="/sign-up">Terms</Link>
 
-              <Link to="/">Tutorials</Link>
+            <Link to="/">Tutorials</Link>
 
-              <Link to="/">Privacy</Link>
+            <Link to="/">Privacy</Link>
 
-              <Link to="/">Contact Us</Link>
-            </div>
+            <Link to="/">Contact Us</Link>
           </div>
         </div>
       </div>

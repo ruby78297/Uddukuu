@@ -2,6 +2,9 @@
   color: teal;
   display: flex;
   justify-content: center;
+  margin: 0;
+  height: 12rem;
+  margin: 20px;
 }
 .login-main-container-0 {
   box-shadow: -0.2em 0 0.2em teal;
@@ -10,6 +13,7 @@
 }
 .login-main-container-1 {
   color: teal;
+  margin-top: 10px;
 }
 .login-main-container-2 {
   font-weight: bold;
@@ -20,6 +24,8 @@
   background-color: rgb(240, 240, 240);
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  padding: 10px;
   align-items: center;
 }
 .login-main-container-2:hover {
@@ -53,6 +59,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-top: 10px;
 }
 .login-main-input-1:hover {
   background: #189494;

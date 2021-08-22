@@ -110,11 +110,11 @@ const Login = ({ history }) => {
       <ToastContainer />
       <div className="max-w-screen-xl m-0 sm:m-20 sm:rounded-lg  flex-1 login-main-container-0">
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
-          <div className="mt-12 flex flex-col items-center">
+          <div className=" flex flex-col items-center">
             <div className="text-2xl xl:text-3xl font-extrabold">
               Sign In for Udukku
             </div>
-            <div className="w-full flex-1 mt-8 login-main-container-1">
+            <div className="w-full flex-1 mt-4 login-main-container-1">
               <div className="flex flex-col items-center">
                 <GoogleLogin
                   clientId={`${process.env.REACT_APP_GOOGLE_CLIENT}`}
@@ -125,7 +125,7 @@ const Login = ({ history }) => {
                     <button
                       onClick={renderProps.onClick}
                       disabled={renderProps.disabled}
-                      className="w-full max-w-xs  login-main-container-2    py-3     
+                      className="w-full max-w-xs  login-main-container-2        
                       "
                     >
                       <div className=" p-2 rounded-full ">
@@ -142,7 +142,7 @@ const Login = ({ history }) => {
                   render={(renderProps) => (
                     <button
                       onClick={renderProps.onClick}
-                      className="w-full max-w-xs login-main-container-2 py-3 mt-5 "
+                      className="w-full max-w-xs login-main-container-2  "
                     >
                       <div className=" p-2 rounded-full ">
                         <i className="fab fa-facebook" />
@@ -153,15 +153,15 @@ const Login = ({ history }) => {
                 />
 
                 <a
-                  className="w-full max-w-xs login-main-container-2 py-3  mt-5"
+                  className="w-full max-w-xs login-main-container-2  "
                   href="/register"
                   target="_self"
                 >
-                  <i className="fas fa-user-plus fa 1x w-6  -ml-2 text-teal-600" />
+                  <i className="fas fa-user-plus fa 1x w-6  -ml-2 text-teal-600 p-2" />
                   <span className="ml-4">Sign Up</span>
                 </a>
               </div>
-              <div className="my-12 border-b text-center">
+              <div className="my-8 border-b text-center">
                 <div className="leading-none px-2 inline-block text-sm text-teal-600 tracking-wide font-medium bg-white transform translate-y-1/2">
                   Or sign In with e-mail
                 </div>
@@ -171,14 +171,14 @@ const Login = ({ history }) => {
                 onSubmit={handleSubmit}
               >
                 <input
-                  className="w-full px-8 py-4 login-main-input"
+                  className="w-full px-8 login-main-input"
                   type="email"
                   placeholder="Email"
                   onChange={handleChange("email")}
                   value={email}
                 />
                 <input
-                  className="w-full px-8 py-4 text-sm mt-5 login-main-input  "
+                  className="w-full px-8 text-sm mt-4 login-main-input  "
                   type="password"
                   placeholder="Password"
                   onChange={handleChange("password1")}
@@ -186,7 +186,7 @@ const Login = ({ history }) => {
                 />
                 <button
                   type="submit"
-                  className="mt-5 tracking-wide login-main-input-1  py-4 "
+                  className=" tracking-wide p-3 login-main-input-1  "
                 >
                   <i className="fas fa-sign-in-alt  w-6  -ml-2" />
                   <span className="ml-3">Sign In</span>
@@ -208,7 +208,6 @@ const Login = ({ history }) => {
           ></div>
         </div>
       </div>
-      ;
     </div>
   );
 };
