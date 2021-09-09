@@ -1,0 +1,81 @@
+.coverSignup-nav {
+  background: rgb(64, 64, 70);
+  height: 6 rem;
+}
+
+.coverSignup-card-container {
+  background: rgb(255, 252, 252);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15rem;
+  justify-content: space-evenly;
+  grid-gap: 30px;
+  margin: 70px 150px 70px 150px;
+}
+.coverSignup-card-0 {
+  background: rgb(255, 252, 252);
+
+  border: 1px solid rgb(189, 186, 186);
+  border-radius: 5px;
+}
+.coverSignup-card-1 {
+  background: rgb(255, 252, 252);
+
+  border: 1px solid rgb(189, 186, 186);
+  border-radius: 5px;
+}
+.coverSignup-card-heading-0 {
+  text-align: center;
+  font-size: x-large;
+  margin: 10px;
+}
+.coverSignup-card-heading-1 {
+  text-align: center;
+  margin: 30px;
+}
+.coverSignup-card-heading-2 {
+  text-align: center;
+  margin: 20px;
+}
+.coverSignup-btn {
+  width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .coverSignup-nav {
+    background: rgb(64, 64, 70);
+    height: 70px;
+  }
+
+  .coverSignup-card-container {
+    height: 65vh;
+    background: rgb(255, 252, 252);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(500px 500px);
+    margin: 10px;
+  }
+  .coverSignup-card-0 {
+    background: rgb(255, 252, 252);
+
+    border: 1px solid rgb(189, 186, 186);
+    border-radius: 5px;
+  }
+  .coverSignup-card-1 {
+    background: rgb(255, 252, 252);
+
+    border: 1px solid rgb(189, 186, 186);
+    border-radius: 5px;
+  }
+  .coverSignup-card-heading-0 {
+    text-align: center;
+    font-size: large;
+  }
+  .coverSignup-card-heading-1 {
+    text-align: center;
+  }
+  .coverSignup-card-heading-2 {
+    text-align: center;
+  }
+  .coverSignup-btn {
+  }
+}

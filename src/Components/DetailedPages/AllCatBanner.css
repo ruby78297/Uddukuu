@@ -1,6 +1,6 @@
 .all-cat-banner {
-  background-color: rgb(25, 29, 29);
-  height: 35rem;
+  background-color: rgb(54, 49, 80);
+  height: 30rem;
 }
 .all-cat-banner-heading {
   /* margin-top: 10%;
@@ -13,9 +13,10 @@
   color: whitesmoke;
   text-align: center;
   font-size: 30px;
+  margin-top: 5%;
 }
 .all-cat-banner-text {
-  margin-top: 8rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,12 +48,16 @@
     align-items: center;
     text-align: center;
     font-size: 30px;
+    margin-top: 2rem;
+    font-size: x-large;
+    line-height: 27px;
   }
   .all-cat-banner-heading-0 {
     padding: 15px;
     color: whitesmoke;
     text-align: center;
     font-size: 20px;
+    margin-top: 2rem;
   }
   .all-cat-banner-text {
     margin-top: 4rem;

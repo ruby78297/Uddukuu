@@ -1,0 +1,11 @@
+.Spcard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+
+  margin: 60px;
+}
+.spcard-btn {
+  background: teal;
+}

@@ -8,23 +8,42 @@ const ServiceBreaker2 = () => {
         <div>
           <h2 className="section-Wraper-0-content">How Udukku works</h2>
         </div>
-        <div>
-          <h4 className="section-Wraper-1-content Wraper-1-content ">
+        <div className="section-wrapper-content-1">
+          <div className="section-Wraper-1-content Wraper-1-content ">
             {" "}
-            Trust Udukku, We will give a shape to your talent{" "}
-          </h4>
+            <ul style={{ display: "flex" }}>
+              <li> Step-1:</li>
+
+              <li style={{ fontSize: "20px", margin: "5px 0px 0px 17px" }}>
+                {" "}
+                Description
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
-          <h4 className="section-Wraper-1-content  Wraper-2-content">
-            {" "}
-            Trust Udukku, We will give a shape to your talent{" "}
-          </h4>
+          <div className="section-Wraper-1-content  Wraper-2-content">
+            <ul style={{ display: "flex" }}>
+              <li>Step-2:</li>
+
+              <li style={{ fontSize: "20px", margin: "5px 0px 0px 17px" }}>
+                {" "}
+                Description
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
-          <h4 className="section-Wraper-1-content   Wraper-3-content ">
-            {" "}
-            Trust Udukku, We will give a shape to your talent{" "}
-          </h4>
+          <div className="section-Wraper-1-content   Wraper-3-content ">
+            <ul style={{ display: "flex" }}>
+              <li>Step-3:</li>
+
+              <li style={{ fontSize: "20px", margin: "5px 0px 0px 17px" }}>
+                {" "}
+                Description
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 

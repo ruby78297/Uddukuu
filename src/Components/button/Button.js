@@ -1,22 +1,100 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Button.css";
-import { Link } from "react-router-dom";
-const STYLES = ["btn-primary", "btn--outline"];
-const SIZES = ["btn--medium", "btn--large"];
-const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStyle
-    : STYLES[0];
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-  return (
-    <Link to="/" className="btn-mobile">
-      <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onclick}
-        type={type}
-        children={children}
-      ></button>
-    </Link>
+
+function Bbutton() {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const renderContent = () => (
+    <>
+      <div className="Parallax__content__heading">
+        <h1 className="Parallax__content__heading__text">Closure</h1>
+        <h2 className="Parallax__content__heading__caption">
+          Your one-stop source of Web Development tricks
+        </h2>
+      </div>
+      <div className="Parallax__content__cta">
+        <p>
+          <b>1. Like the video.</b> Because it helps me and my channel
+        </p>
+        <p>
+          <b>2. Like the video.</b> To see more content like that!
+        </p>
+        <p>
+          <b>3. Follow the Github link.</b> And play with this code yourself!
+        </p>
+      </div>
+    </>
   );
-};
-export default Button;
+
+  return (
+    <>
+      <div className="Parallax">
+        <div
+          className="Parallax__background"
+          style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
+        />
+        <div
+          className="Parallax__background-triangles"
+          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+        />
+        <div className="Parallax__content">{renderContent()}</div>
+      </div>
+      <div>
+        {" "}
+        <div>
+          <p>
+            <b>1. Like the video.</b> Because it helps me and my channel
+          </p>
+          <p>
+            <b>2. Like the video.</b> To see more content like that!
+          </p>
+          <p>
+            <b>3. Follow the Github link.</b> And play with this code yourself!
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>1. Like the video.</b> Because it helps me and my channel
+          </p>
+          <p>
+            <b>2. Like the video.</b> To see more content like that!
+          </p>
+          <p>
+            <b>3. Follow the Github link.</b> And play with this code yourself!
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>1. Like the video.</b> Because it helps me and my channel
+          </p>
+          <p>
+            <b>2. Like the video.</b> To see more content like that!
+          </p>
+          <p>
+            <b>3. Follow the Github link.</b> And play with this code yourself!
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>1. Like the video.</b> Because it helps me and my channel
+          </p>
+          <p>
+            <b>2. Like the video.</b> To see more content like that!
+          </p>
+          <p>
+            <b>3. Follow the Github link.</b> And play with this code yourself!
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Bbutton;

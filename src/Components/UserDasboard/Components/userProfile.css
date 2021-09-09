@@ -1,0 +1,60 @@
+.Userprofile-container {
+  height: 28rem;
+  background: #002d62;
+}
+.Userprofile-0 {
+  margin: 100px 0px 0px 40px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+.Userprofile-1 {
+  height: 5rem;
+  background: #fff;
+  display: flex;
+  border-bottom: 2px solid rgb(216, 213, 213);
+}
+.Userprofile-2 {
+  display: flex;
+}
+.Userprofile-li {
+  padding: 20px;
+}
+.Userprofile-btn {
+  height: 40px;
+  text-align: center;
+  background: rgb(228, 225, 225);
+  color: black;
+  margin-left: 75%;
+  margin-top: 20px;
+}
+.Userprofile-3 {
+  height: 15rem;
+  border-bottom: 2px solid rgb(216, 213, 213);
+}
+.Userprofile-4 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 15rem;
+  grid-gap: 20px;
+  padding: 50px;
+  border-top: 2px solid rgb(216, 213, 213);
+}
+.Userprofile-4-reviews {
+  border: 1px solid rgb(216, 213, 213);
+}
+.Userprofile-4-findme {
+  text-align: center;
+  border: 1px solid rgb(216, 213, 213);
+}
+@media screen and (max-width: 780px) {
+  .Userprofile-btn {
+    height: 40px;
+    text-align: center;
+    background: rgb(228, 225, 225);
+    color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+.myinterview-container-1 {
+  margin: 10px 0px 0px 0px;
+  font-size: 40px;
+}
+.myinterview-container-2 {
+  margin: 20px 0px 0px 0px;
+  font-size: large;
+}
+
+#myinterview-input {
+  height: 6rem;
+}
+.myinterview-container-input {
+  margin-top: 20px;
+}
+#myinterview-container-btn {
+  margin-left: 75%;
+  padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  #myinterview-container-btn {
+    margin-left: 50%;
+  }
+}

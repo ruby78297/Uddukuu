@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import Button from "../button/Button";
+import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 import logo from "../Banner/Navbar/udukku-logo.png";
 
 function Footer() {
@@ -19,16 +19,16 @@ function Footer() {
               +(91)7487848842
             </p>
           </div>
-          <div className=" col-md footer-link-items footer-link-items-2">
-            <Link to="/sign-up">Sign up as a provider</Link>
+          <div className="col-md footer-link-items footer-link-items-2">
+            <Link to="/SPsign-up">Sign up as a provider</Link>
 
             <Link to="/">Sign in</Link>
 
             <Link to="/">About Us</Link>
 
-            <Link to="/">User Reviews</Link>
+            <Link to="/spdsh">User Reviews</Link>
 
-            <Link to="/">FAQ</Link>
+            <Link to="/para">FAQ</Link>
           </div>
 
           <div className=" col-md footer-link-items footer-link-items-3">
@@ -39,12 +39,12 @@ function Footer() {
 
             <Link to="/">Privacy</Link>
 
-            <Link to="/">Contact Us</Link>
+            <Link to="/test">Contact Us</Link>
           </div>
         </div>
       </div>
-      <section className="social-media">
-        <div className="social-media-wrap">
+
+      {/* <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/">
               {" "}
@@ -79,8 +79,29 @@ function Footer() {
               <i className="fab fa-instagram " />
             </Link>
           </div>
+        </div> */}
+      <div className="last-div">
+        <div style={{ textAlign: "center" }}>
+          <Link to="/">
+            {" "}
+            <img src={logo} alt="uddukku" className="logo-1" />
+          </Link>
         </div>
-      </section>
+        <div style={{ textAlign: "center", color: "white" }}>udukku © 2021</div>
+        <div>
+          <ul className="footer-icons-ul">
+            <li className="footer-icons">
+              <FaFacebookF />
+            </li>
+            <li className="footer-icons">
+              <FaInstagram />
+            </li>
+            <li className="footer-icons">
+              <FaTwitter />
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

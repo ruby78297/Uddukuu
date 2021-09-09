@@ -80,28 +80,28 @@ const Register = () => {
             >
               <div className="mx-auto max-w-xs relative ">
                 <input
-                  className="w-full px-12 py-3 reg-main-input"
+                  className="w-full px-12 py-2 reg-main-input"
                   type="text"
                   placeholder="Name"
                   onChange={handleChange("name")}
                   value={name}
                 />
                 <input
-                  className="w-full px-12 py-3 reg-main-input mt-3"
+                  className="w-full px-12 py-2 reg-main-input mt-3"
                   type="email"
                   placeholder="Email"
                   onChange={handleChange("email")}
                   value={email}
                 />
                 <input
-                  className="w-full px-12 py-3 reg-main-input mt-3"
+                  className="w-full px-12 py-2 reg-main-input mt-3"
                   type="password"
                   placeholder="Password"
                   onChange={handleChange("password1")}
                   value={password1}
                 />
                 <input
-                  className="w-full px-12 py-3 reg-main-input  mt-3"
+                  className="w-full px-12 py-2 reg-main-input  mt-3"
                   type="password"
                   placeholder="Confirm Password"
                   onChange={handleChange("password2")}
@@ -109,7 +109,7 @@ const Register = () => {
                 />
                 <button
                   type="submit"
-                  className="mt-3 tracking-wide reg-main-input-1 py-3"
+                  className="mt-3 tracking-wide reg-main-input-1 py-2"
                 >
                   <i className="fas fa-user-plus fa 1x w-6  -ml-2 text-white" />
                   <span className="ml-3">{textChange}</span>
@@ -122,7 +122,7 @@ const Register = () => {
               </div>
               <div className="flex flex-col items-center">
                 <a
-                  className="w-full max-w-xs register-signin   py-3 mt-3"
+                  className="w-full max-w-xs register-signin   py-2 mt-3"
                   href="/login"
                   target="_self"
                 >

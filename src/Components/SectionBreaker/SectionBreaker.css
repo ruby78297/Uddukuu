@@ -6,13 +6,30 @@
   justify-items: center;
   align-items: center;
   width: 100%;
+  
+  
+}
+.main-breaker-container{
+  background-color: teal;
+ 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .breker1-title {
   margin-top: 30px;
 }
+.m{
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 150px;
+  width: 150px;
+}
 .servicebreaker-text {
+  text-align: center;
   font-size: x-large;
-  color: black;
+  color: #fff;
   margin-top: 10px;
 }
 .service-2-image {
@@ -30,7 +47,7 @@
   }
   .servicebreaker-text {
     font-size: x-large;
-    color: black;
+    color: #fff;
     margin-top: 10px;
   }
 }

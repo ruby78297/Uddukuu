@@ -1,0 +1,9 @@
+.result-card {
+  padding: 5px;
+}
+.card-div {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px;
+  grid-gap: 2px; */
+}

@@ -1,0 +1,109 @@
+.editprofile-container-0 {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  grid-template-rows: auto;
+  padding: 20px;
+  grid-gap: 60px;
+  margin: 40px;
+  border: 2px solid rgb(216, 212, 212);
+  border-radius: 5px;
+}
+.editprofile-title-1 {
+  height: 40px;
+  font-size: 20px;
+  margin: 20px 0px 20px 10px;
+  border-bottom: rgb(231, 231, 231) solid 3px;
+}
+.editprofile-title-1:hover {
+  border-bottom: teal solid 3px;
+  cursor: pointer;
+}
+.editprofile-title-2 {
+  height: 40px;
+  margin: 20px 0px 20px 10px;
+  font-size: 20px;
+  border-bottom: rgb(231, 231, 231) solid 3px;
+}
+.editprofile-title-2:hover {
+  border-bottom: teal solid 3px;
+  cursor: pointer;
+}
+.editprofile-title-3 {
+  height: 40px;
+  margin: 20px 0px 20px 10px;
+  font-size: 20px;
+  border-bottom: rgb(231, 231, 231) solid 3px;
+}
+.editprofile-title-3:hover {
+  border-bottom: teal solid 3px;
+  cursor: pointer;
+}
+.editprofile-title-4 {
+  height: 40px;
+  font-size: 20px;
+  margin: 20px 0px 20px 10px;
+  border-bottom: rgb(231, 231, 231) solid 3px;
+}
+.editprofile-title-4:hover {
+  border-bottom: teal solid 3px;
+  cursor: pointer;
+}
+/* Editing profile css */
+.edit-profile-cntainer {
+  padding: 10px;
+}
+.edit-profile-input {
+  border: 1px gray solid;
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.edit-profile-heading {
+  font-size: 30px;
+}
+.edit-profile-footer-ul {
+  display: flex;
+}
+.edit-profile-footer-li {
+  padding: 20px;
+}
+.edit-profile-footer-icons {
+  padding: 20px;
+  margin-left: 10%;
+}
+.edit-profile-footer-ul-1 {
+  display: flex;
+  border: 2px solid blue;
+  background: blue;
+  width: 70px;
+}
+.edit-profile-footer-li-1 {
+  color: #fff;
+  margin-top: 10%;
+}
+.edit-profile-footer-li-2 {
+  color: #fff;
+}
+.edit-profile-footer-copyright {
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .editprofile-container-0 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+    grid-gap: 60px;
+    margin: 20px;
+    border: 2px solid rgb(216, 212, 212);
+    border-radius: 5px;
+  }
+  #myinterview-container-btn {
+    margin-left: 50%;
+  }
+  .edit-profile-footer-ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+  }
+}

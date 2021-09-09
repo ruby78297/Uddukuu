@@ -1,0 +1,42 @@
+.dash-nav {
+  background: #002d62;
+  height: 5rem;
+}
+.favorites {
+  font-size: x-large;
+}
+
+.favorites:hover {
+  color: red;
+}
+.nav-drp {
+  font-size: small;
+  margin-top: 8px;
+  background: #002d62;
+  border: none;
+}
+.nav-drp:hover {
+  background: teal;
+}
+.logout {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .nav-drp {
+    display: none;
+  }
+  .favorites {
+    display: none;
+  }
+  .logout {
+    display: block;
+    margin-top: -40px;
+  }
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 15%;
+  }
+}

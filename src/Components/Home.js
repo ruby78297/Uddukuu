@@ -12,6 +12,9 @@ import ServicesTitle from "./Services/ServicesTitle";
 const Home = () => {
   return (
     <div>
+     {
+    window.scrollTo(0, 0)
+  }
       <Banner />
       <ServicesTitle />
       <Services />

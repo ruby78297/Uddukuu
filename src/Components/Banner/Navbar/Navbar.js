@@ -6,9 +6,14 @@ import logo from "./udukku-logo.png";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+
   return (
-    <nav className="navbar">
-      <img src={logo} alt="uddukku" className="logo" />
+    <div className="navbar">
+      <Link to="/">
+        {" "}
+        <img src={logo} alt="uddukku" className="logo" />
+      </Link>
+
       <ul
         className={isMobile ? "mobile-nav-list" : "nav-list"}
         onClick={() => setIsMobile(false)}
@@ -16,6 +21,9 @@ const Navbar = () => {
         <Link to="/" className="home"></Link>
         <Link to="/explore" className="explore">
           <li>Explore</li>
+        </Link>
+        <Link to="/login" className="blog">
+          <li>Blog</li>
         </Link>
         <Link to="/Soundbank" className="soundbank">
           <li>Sound Bank</li>
@@ -37,7 +45,7 @@ const Navbar = () => {
           <i className="fas fa-bars"></i>
         )}
       </button>
-    </nav>
+    </div>
   );
 };
 export default Navbar;

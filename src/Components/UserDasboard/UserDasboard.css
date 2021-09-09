@@ -1,0 +1,83 @@
+.dash-active {
+  font-size: 40px;
+  font-weight: 600;
+  padding: px;
+  padding-left: 50px;
+  border-bottom: 2px solid rgb(211, 207, 207);
+}
+.dash-filter {
+  height: 3rem;
+  background: rgb(248, 246, 246);
+  font-size: x-large;
+  padding: 10px 0px 30px 50px;
+}
+.dash-container {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 300px;
+}
+.dash-container-0 {
+  background: rgb(252, 249, 249);
+}
+.dash-li-0 {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.dash-li-1 {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.dash-li-2 {
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.dash-li-3 {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.dash-li-4 {
+  margin-left: 60px;
+  margin-top: 15px;
+}
+.dash-li-5 {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.dash-li-6 {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.dash-container-1 {
+  background: rgb(248, 248, 248);
+  margin-top: 50px;
+}
+
+.table.PerformanceTable th.PerformanceCell {
+  width: 245px;
+
+  text-align: center;
+  font-weight: normal;
+}
+.table.PerformanceTable th.PerformanceCell:hover {
+  background: rgb(221, 219, 219);
+  font-weight: 500;
+}
+.dash-li-7 {
+  margin: 20px;
+}
+.dash-li-8 {
+  display: flex;
+  margin: 20px;
+}
+.dash-li-9 {
+  margin: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .dash-container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

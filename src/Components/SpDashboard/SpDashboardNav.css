@@ -1,0 +1,53 @@
+.dashboard-container {
+  display: flex;
+  height: 4rem;
+  background: #002d62;
+  border-top: 1px solid rgb(212, 210, 210);
+}
+.dash-container-li {
+  color: #fff;
+  padding-left: 20px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.dashboard-container-0 {
+  height: auto;
+  margin-bottom: 2rem;
+}
+.dashboard-container-1 {
+  min-height: 1rem;
+
+  margin: 30px 0px 0px 70px;
+  font-size: 30px;
+}
+.dashboard-cont-list {
+  margin: 20px 70px 0px 70px;
+
+  border: 1px solid rgb(212, 210, 210);
+}
+.dashboard-contain-li {
+  display: flex;
+  padding: 0px 10px 20px 10px;
+
+  border-bottom: 1px solid rgb(212, 210, 210);
+  height: 2em;
+  overflow: hidden;
+  cursor: pointer;
+}
+.dashboard-contain-li:hover {
+  display: flex;
+  padding: 0px 10px 20px 10px;
+
+  border-bottom: 1px solid rgb(212, 210, 210);
+  height: auto;
+
+  cursor: pointer;
+}
+.dashboard-contain-li-0 {
+  border-bottom: 1px solid rgb(212, 210, 210);
+  padding: 20px;
+}
+.dash-icon {
+  width: fit-content;
+  margin: 5px 8px 0px 0px;
+}

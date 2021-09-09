@@ -1,0 +1,15 @@
+.fav-banner-container {
+  height: 17rem;
+  background: #002d62;
+}
+.fav-banner-0 {
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+.fav-item-container {
+  min-height: 6rem;
+  margin: 80px 0px 60px 40px;
+}

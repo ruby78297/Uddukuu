@@ -1,0 +1,79 @@
+.massage-container {
+  height: 10rem;
+  border-bottom: 2px solid rgb(226, 225, 225);
+}
+.massage-heading-0 {
+  font-size: 50px;
+  margin: 15px 0px 0px 40px;
+  font-weight: 600;
+}
+.massage-list {
+  margin: 20px 0px 0px 30px;
+}
+.massage-list-item {
+  padding: 20px;
+}
+.msg-search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: 36px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #e7e7e7;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #e3e5e6;
+}
+
+.msg-searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #d2d4d4;
+  background: #919292;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.msg-wrap {
+  width: 25%;
+  /* position: absolute; */
+  margin-top: 20px;
+  margin-left: 70%;
+}
+.msg-items {
+  margin-top: 40px;
+  text-align: center;
+  min-height: 10rem;
+  background: rgb(250, 249, 249);
+  font-size: 20px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .msg-items {
+    min-height: 8rem;
+    background: rgb(250, 249, 249);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+  .msg-wrap {
+    width: 80%;
+    /* position: absolute; */
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+}

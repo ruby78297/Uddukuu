@@ -1,9 +1,9 @@
 .all-cards {
-  background-color: teal;
+ 
   height: 100rem;
 }
 .all-cat-cards {
-  background-color: rgb(90, 173, 173);
+  
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -12,4 +12,7 @@
   font-size: xx-large;
   color: black;
   align-self: center;
+}
+.all-cat-title{
+  background-color:  rgb(247, 243, 243);
 }

@@ -18,11 +18,12 @@ const CardCarousel = () => {
   return (
     <div className="parent">
       <div className="slider-top-title">
-        <p id="slider-top-title-id"> Meet our top-6 of the week</p>
+        <p id="slider-top-title-id"> Top Music Professionals for hire</p>
       </div>
+      <br />
       <div className="carousel-container-1">
         <Swiper
-          spaceBetween={30}
+          spaceBetween={-80}
           slidesPerView={3}
           grabCursor={true}
           navigation

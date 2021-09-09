@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./SearchBar.css";
+import Srchbr from "./Srchbr";
+import { CardData } from "../../Services/CardData";
+// import { Button, SearchResult } from "semantic-ui-react";
+import ResultCards from "./Components/ResultCards";
+import { Button } from "semantic-ui-react";
+import { FaSearch } from "react-icons/fa";
+import SearchList from "./Components/SearchList";
+import Scroll from "./Components/Scroll";
 
-const SearchBar = () => {
+function SearchBar({ details }) {
+  const [searchField, setSearchField] = useState("");
+  const [searchShow, setSearchShow] = useState(false);
+
+  const filteredPersons = CardData.filter((person) => {
+    return person.title.toLowerCase().includes(searchField.toLowerCase());
+    //  ||
+    // person.name.toLowerCase().includes(searchField.toLowerCase())
+  });
+
+  const handleChange = (event) => {
+    const data = event.target.value;
+    setSearchField(data);
+
+    if (data === "") {
+      setSearchShow(false);
+    } else {
+      setSearchShow(true);
+    }
+  };
+
+  function searchList() {
+    if (searchShow) {
+      return <SearchList result={filteredPersons} />;
+    }
+  }
+
   return (
-    <div className="container-1">
+    <div className="search-main-container">
       <div className="quote-container">
         <div className="quote">
           {" "}
@@ -16,9 +50,27 @@ const SearchBar = () => {
           </p>
         </div>
       </div>
-      <br></br>
+
       <div className="search-container">
-        <div className="search-box">
+        <div className="ui search">
+          <div className="input-box">
+            <input
+              type="text"
+              placeholder=" what are you looking for.."
+              className="search-input"
+              onChange={handleChange}
+              name="s"
+            />
+            {/* <button className="btn-1" type="submit">
+              Search
+            </button> */}
+            <FaSearch
+              className="searchbox-icon"
+              style={{ fontSize: "50px", color: "teal", padding: "10px" }}
+            />
+          </div>
+        </div>
+        {/* <div className="search-box">
           <form action="/" method="get">
             <label htmlFor="header-search">
               <span className="visually-hidden"></span>
@@ -33,9 +85,10 @@ const SearchBar = () => {
               Search
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
+      <div className="search-results">{searchList()}</div>
     </div>
   );
-};
+}
 export default SearchBar;

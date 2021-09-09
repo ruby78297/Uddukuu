@@ -109,7 +109,7 @@ const Login = ({ history }) => {
       {/* {isAuth() ? <Redirect to="/" /> : null} */}
       <ToastContainer />
       <div className="max-w-screen-xl m-0 sm:m-20 sm:rounded-lg  flex-1 login-main-container-0">
-        <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
+        <div className="lg:w-1/2 xl:w-5/12 p-2 sm:p-12">
           <div className=" flex flex-col items-center">
             <div className="text-2xl xl:text-3xl font-extrabold">
               Sign In for Udukku
@@ -161,7 +161,7 @@ const Login = ({ history }) => {
                   <span className="ml-4">Sign Up</span>
                 </a>
               </div>
-              <div className="my-8 border-b text-center">
+              <div className="my-3 border-b text-center">
                 <div className="leading-none px-2 inline-block text-sm text-teal-600 tracking-wide font-medium bg-white transform translate-y-1/2">
                   Or sign In with e-mail
                 </div>
@@ -186,7 +186,7 @@ const Login = ({ history }) => {
                 />
                 <button
                   type="submit"
-                  className=" tracking-wide p-3 login-main-input-1  "
+                  className=" tracking-wide p-2 login-main-input-1  "
                 >
                   <i className="fas fa-sign-in-alt  w-6  -ml-2" />
                   <span className="ml-3">Sign In</span>

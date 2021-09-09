@@ -5,6 +5,9 @@ import "./AllCatBanner.css";
 const AllCatBanner = () => {
   return (
     <div className="all-cat-banner">
+        {
+    window.scrollTo(0, 0)
+  } 
       <Navbar />
       <div>
         <div className="all-cat-banner-text">
